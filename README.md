@@ -60,7 +60,16 @@ By defult all Inbound traffic is blocked and outbond traffic is authorized.
 
 Ports to know:
 ![image](https://github.com/kiran-ab01/AWS/assets/132429361/43db8c71-c28f-48a5-b725-42da3f5dcdc5)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/05b7e578-18bb-4cdd-8c93-5321a270544a)
 
+
+# to connect through ssh in linux and mac
+we need to place .pem file which is downloded in to the specific folder and need to run **SSH ec2-user@publicIP**
+By defult intsnace create ec2-user to access so we need to make use of that.
+If we get an error like : too many authentication failure : Thats becouse we have not specified the key which is downloded.
+To sepecify go to the path to .pem file and use **ssh -i filename.pem ec2-user@publicIP** 
+
+after this if we face another error like: unprotected private key , we need to give permisstion like: **chmod 0400 filename.pem** 
 
 
 
