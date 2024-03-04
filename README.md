@@ -69,12 +69,61 @@ If we get an error like : too many authentication failure : Thats becouse we hav
 To sepecify go to the path to .pem file and use **ssh -i filename.pem ec2-user@publicIP** 
 
 after this if we face another error like: unprotected private key , we need to give permisstion like: **chmod 0400 filename.pem** 
-# to connect through ssh using windows
+# to connect through ssh using windows below window-10
 we need to make use of free ssh claint plugin called putty.
 First we need to save our private key, so open putty gen and serch for the .pem file and save it .
 we need to convert pem file to ppk format to access in putty.
 need to give public ip and port number to access.if we face any issues just give ec2-user@publicip and port number to login.
 To add private key in catogory --> connection --> ssh --> auth --> browse for ppk file stored in local.
+
+# to connect through window above window-10
+we can connect through ssh method in CMD / we can make use of putty.
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/b8baa095-f01e-4b08-86f8-4dea8b851a64)
+
+we can connect Ec-2 instance using ec2 terminals.
+# Iam roles
+never ever enter our scurity access keys into an ec2 instance/ terminals becouse any one can able to login using our accounts.
+insted we can make use of IAM rolse attached to ec2 instance in security to provide the credentials.
+
+# Ec2 Instance storage sections
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/06c27969-6669-4173-8613-ad395271d56a)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/d3850664-afca-4d64-b355-49bde1f08909)
+
+# EBS volumes attched to ec2 instance
+go to ec2 instance -> storage -> under that we can find volume -> we can create new EBS volume.
+after that its not attched to any instance -> to attach -> click on action -> attach volume -> select instance -> click on attach volume.
+Note: if we have diffrent Zone compare to ec2 instance and EBS volume we can't able to attche the instance.it should be same.
+
+If we are going to terminate the ec2 instance.In EBS volume-> ec2 storage section -> **delete on termination** should be **No** becouse if we terminate the ec2 instance EBS volume also terminated if we select the defult option.
+# EBS Snapshots
+make a backup->snapshot of our EBS volum at any point of time.
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/ddb8a91a-89d6-4cdf-bbf4-512a62ee48ce)
+we can move EBS snapshot to archive tier which is cheeper.
+we can recycle bin for deleted snapshots/ we can set retention ruls to accidental deleted snapshots from1 day to year.
+to take a snapshot -> go to EBS volume -> actins -> create snapshots-> we can give description -> click on create snapshots.
+we can copy snapshot to other region ans also by takeing this snapshot we can recreate the volume -> go to snapshot -> click on action -> create volume from snapshot -> and select region.
+# AMI = Amazon machine image 
+ami are a custamization of an EC2 instance.
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/25d482f6-0071-44d6-b2c8-08f7dffa8302)
+To create AMI -> go to ec2 instance -> right click on instance -> image and templets -> create image -> image name -> create image.
+in the left side under AMIS -> Images -> we can see the AMI images -> once the AMI images are avilable we can create instance using those images / by creating a instance only we can select ami images shared by/owned by.
+AMI snapshot will also take a backup in customizable way.
+
+# Ec2 image builder
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/5b516c41-a29a-47c9-b0e8-051b063ef689)
+image builder is free serveice only it will cost for resource like ec2 instannce creation, ami storage, etc.
+# EFS = elastic file system
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/07130215-7862-4f5a-8b61-cce2d29896a1)
+
+# EBS v/s EFS
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/6be78f9f-47a7-4ecc-a81b-14f4d9ced3da)
+# EFS-IA
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/47223d25-e8d7-46aa-9b80-b1bf2c220467)
+
+# Elastic load balancing
+
+
+
 
 
 
