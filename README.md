@@ -121,6 +121,28 @@ image builder is free serveice only it will cost for resource like ec2 instannce
 ![image](https://github.com/kiran-ab01/AWS/assets/132429361/47223d25-e8d7-46aa-9b80-b1bf2c220467)
 
 # Elastic load balancing
+Scalabilty & high availablity
+scalablity: application/system can handle greate loads and in scalabilty we have vertical scalabilty and horizantal scalablity.
+vertical scalabilty: incressing the size of the instance.ex: t2.micro to t2.large.
+horizantal scalablity: incress the no of instance/system for your application.:ex: multiple operators can constanty work if one os not avaialble also.
+**high availablity**: running our application/system in at least 2 avialablity zone.ex: is we have some issue in availablity zone 1 the avaiablitty zone 2 need to run.ex:multiple nodes.
+# Load balancing 
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/c4045f7b-515f-4e3c-b773-885d01148d6d)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/b8765ffa-9661-48fc-b270-5dff51baa3b0)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/f2165d5b-8c68-47b9-ae7c-fd49ba1fb9a7)
+
+First ready 2 instance -> under load balancing -> load balancers-> create load balanecr-> we get 3 LB and select application load balencer-> give name ->scheme is internal-facing ->Ip address type is IPv4 -> in network mapping we need to select availablity zone ->select security group(add inbound and outbond ruls) -> (need to create target group -> we have to rigister a target) -> create load balencer.
+Through the target group is going to send the trafic.
+
+# Auto scaling group
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/20183ea2-19ef-4bfb-b9af-f9d031e804b8)
+To create atou scalling group -> under atou scaling ->atou scaling group -> give name-> we need to create launc templ(in this tmpt we can say how to create ec2 instance. ex:we can select os, Ami,instnace type,security group, etc) -> we can select network where we can select availablity zone for atou scling group -> next -> next we need to select load balnecer -> select attche to an existing load balancer -> select LB -> next -> configure group size and scling policy -> select desired capacity(how many instance we want at any time) -> minimu capacity(1 atlest need ) and maximum capacity(4 maximum we may required 4 instance)->next -> create auto scaling group.
+after creating a atou scalling group the new 2 ec2 instance will be created as we mentiond in the desired capacity.
+The target group in the load balaning also pointing to the new instance created.
+**Note: If we terminate one of the ec2 instance, becouse of in atou scalling group we decide as 2 desired capacity it will create a new instance.if any sinatce is unhealty new instance will created becouse of atou scalling for replacement** 
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/1d1352e5-f996-408d-875c-2c4c1b0b8399)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/f35f5aad-94c3-43ce-bbac-f0f6cd047406)
+
 
 
 
