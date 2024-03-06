@@ -164,9 +164,24 @@ if we don't know how to write a policy we have aws polic generator: https://awsp
 # s3 replication 
 ![image](https://github.com/kiran-ab01/AWS/assets/132429361/207200e5-94d5-44aa-a0b8-5bb9b5cadb16)
 
+# RDS(relatinal database) in aws
+in services -> Rds-> database-> create database -> select standard/easy -> select engine -> select like mysql,postgres,oracle,etc -> select version -> select templte->db name->give master username->master password->select storage type(ssd,)->select allocated storage->enable storage atouscalling->select vpc & vpc security group->database ports->done.
 
+after creation-> in connectivity & security we get endpoint to connect and port details. in monitering we get CPU utilization/db connection details and also storgage space .
+we can also take snapshot of the database and we can also restore the snapshot databse(it create new database),we can copy the database diff regin,share the database to another aws account.
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/e8fd06cb-a29a-4227-9a61-9055aa75eadf)
+create dynamodb-> go to dynamodb -> table -> create table->table names->sepcify partition key-> create table(in table we can add values, we can't link table to table).
+similarly we have multiple datbase supported in aws : https://bluexp.netapp.com/blog/aws-cvo-blg-aws-databases-the-power-of-purpose-built-database-engines
+# database migration service
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/1c243d19-e1ab-4694-9f2d-a49400d71c16)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/4b6578c8-70fc-4708-80a6-80b4c5de75f7)
 
-
+# aws lambda
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/567ef89f-05fb-4df3-9796-fe8246b2f0de)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/66fbb4c5-b1f2-43de-814d-a3a67b0af18b)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/4fd8ea22-9b02-4b32-a58c-4b8f0ffaa310)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/701af2a0-ab32-4b61-912c-f0ac74f850c5)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/933a027c-5a9a-47be-b2a3-896f807135ab)
 
 
 
