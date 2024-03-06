@@ -143,6 +143,27 @@ The target group in the load balaning also pointing to the new instance created.
 ![image](https://github.com/kiran-ab01/AWS/assets/132429361/1d1352e5-f996-408d-875c-2c4c1b0b8399)
 ![image](https://github.com/kiran-ab01/AWS/assets/132429361/f35f5aad-94c3-43ce-bbac-f0f6cd047406)
 
+# Amazon S3
+Amazon s3 is used for backup and storage,disastor recovery,archive,hybrid cloud storage,application hosting,media hosting.
+amazon s3 allow people to stores data/file in bucket(directories)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/325f6aef-28e5-4fc7-b309-2ba0c6c6b50f)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/2ab220e0-4dbe-448e-9ac9-5fb76ff23f0b)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/eebbb5ce-8cb4-4dba-94cb-7fa0991010c8)
+To create s3 bucket-> give bucket name -> aws region ->we can chose copy setting from privious bucket ->create bucket.
+to update objects to the bucket -> click on upload ->add files -> select files -> upload.
+we can create folder in the s3 bucket and also we can upload files.
+
+# amazon s3 security
+json based policy,
+How to attache s3 bucket policy ->bucket-> permisstion -> block public access setting(by defult public permisstion is blocked if we enable to public access our data can be access to any user in the internet) ->bucket policy -> we can write a json based policy.
+if we don't know how to write a policy we have aws polic generator: https://awspolicygen.s3.amazonaws.com/policygen.html (it will generate a policy for us based on the requirement).
+
+# s3 versioning 
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/268ed6f7-dd08-4981-93ab-f04321d6567e)
+
+# s3 replication 
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/207200e5-94d5-44aa-a0b8-5bb9b5cadb16)
+
 
 
 
