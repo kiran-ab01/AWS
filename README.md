@@ -183,6 +183,29 @@ similarly we have multiple datbase supported in aws : https://bluexp.netapp.com/
 ![image](https://github.com/kiran-ab01/AWS/assets/132429361/701af2a0-ab32-4b61-912c-f0ac74f850c5)
 ![image](https://github.com/kiran-ab01/AWS/assets/132429361/933a027c-5a9a-47be-b2a3-896f807135ab)
 
+# AWS cloud formation
+infrastructre as code in the cloud formation ex:terraform
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/7db0c49b-02d5-4324-830f-40a9171f16b1)
+cloud formation will give atomatic infrastructure creation when we have code/old infrastructure.(create in us-east(n.vergina) regin)
+cloud formation->create->select templet->we can upload ymal files or url(in ymal files they should be  code to create instance/any other configuration)->give name ->done
+we can get desgin view after we attached the templet.
+
+# Beanstalk
+PAAS->platfrm as a service
+to add beanstalk service-> create->select tier->give application name-> select platform type->chose application code/we can upload our code-> select presets(single instance/high avilablity)->select service roles->we can select more configuration.
+
+# amazon route 53
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/3d4e684f-ec25-4fc9-9132-a41b57fe743e)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/b2301da8-f63e-4c0b-808c-881882f125f1)
+Route 53-> to get started with route 53 we need to rigister domine(it will cost).to rigiester a domin(go to route 53->rigister domine ->give domine-> and select availble one->done
+In the hosted zone we are going to place the dns records.
+Now to add route 53-> go to the hosted zone->create records->give record name->ex:www.(kiran.com- domine which rigisterd) ->in the value give public ip->and in routeing policy->select latancy-it will access to users which is near to them(we have diffrent type of route ex:simple,weighted,failover,etc)->select regin->we can add another record for other ec2-instance-done.
+
+if we open a new tab and serach www.kiran.com in google it will locate to the ec2-inastance that is closest to user. and if we use the vpn and serch the url it will navigate to there instnace.
+
+# cloudwatch 
+where we can get the alert notification if cpu utilization is high/some of the reports.
+
 
 
 
