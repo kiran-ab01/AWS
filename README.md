@@ -205,6 +205,22 @@ if we open a new tab and serach www.kiran.com in google it will locate to the ec
 
 # cloudwatch 
 where we can get the alert notification if cpu utilization is high/some of the reports.
+cloudwatch-> all matrix->we may see multiple-we can configure how we needed.
+
+# VPC-virutual private cloud
+IP -> public ip,private ip,elastic ip.
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/a516af68-1bbf-4e04-b6ad-4bda2c103708)
+ Internet gateway:helps vpc to connect with the internet.
+If we have any instance in private subnet and that need to connect with internet, if we need to give accesable to internet for that we need to have **NAT gateway**that nat gatway will connect with internet gateway.
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/8718fc00-f78e-45df-a6e8-647f62a8aea1)
+by default after aws account is created 1 vpc,3subnets,1routetable,1internet gatway,1 networkacls,1security groups.
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/9e59ce4a-a167-424e-893c-fbba4b1a6394)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/41f76ffc-e831-4b18-9c37-bf0fb6120b5f)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/914266f9-c83d-4d12-9fb7-318c8ad90611)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/1c4fa4ce-4564-455c-916f-174b7f44562e)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/4fc4ba3a-ed02-418c-b2d5-8019762c3e8d)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/17fecf73-d609-45f3-8e44-927232d87ffe)
+
 
 
 
