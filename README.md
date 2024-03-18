@@ -224,6 +224,8 @@ by default after aws account is created 1 vpc,3subnets,1routetable,1internet gat
 ![image](https://github.com/kiran-ab01/AWS/assets/132429361/cb91043e-281f-4420-8ba2-558ea2b08170)
 ![image](https://github.com/kiran-ab01/AWS/assets/132429361/ed381814-f1ae-48e3-a817-cd60afbb97f0)
 we can transcipt langauge from one to other and we can trancript from words to speach using polly.
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/9488c1d2-e85a-4b8c-9780-e9cb2f51b883)
+![image](https://github.com/kiran-ab01/AWS/assets/132429361/f12178dd-52fa-4e2c-9ffd-e925f54991d4)
 
 
 
